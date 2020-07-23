@@ -5,7 +5,22 @@ Returns: a List of integers
 def sliding_window_max(nums, k):
     # Your code here
 
-    pass
+    # Plan
+
+    # make temporary arrays and calculate its maximum.
+    # Move the limits of the temporary arrays, while posible.
+
+    left = 0
+    right = k
+    lst = []
+
+    while right <= len(nums):
+
+        lst.append(max(nums[left:right]))
+        left +=1
+        right +=1
+
+    return lst
 
 
 if __name__ == '__main__':
