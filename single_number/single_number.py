@@ -5,8 +5,18 @@ Returns: an integer
 def single_number(arr):
     # Your code here
 
-    pass
+    # Get the unique values.
 
+    # Pop those values from the array.
+
+    # Compare the left array and the set of unique values.
+
+    unique = set(arr)
+
+    for i in unique:
+        arr.pop(arr.index(i))
+
+    return unique.symmetric_difference(arr).pop()
 
 if __name__ == '__main__':
     # Use the main function to test your implementation
